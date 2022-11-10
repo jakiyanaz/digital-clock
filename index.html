@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="maincontainer">
+            <section id="datetime" class="sec">
+                <div id="heading">
+                    <h1 style="font-size: 50px; text-align: center;">Digital Clock</h1>
+                    <p style="text-align: center;">Time is money</p>
+                    <hr>
+                </div><br>
+                <div id="day" class="secdatetime">
+                    <p id="daytoday"></p>
+                </div>
+                <div id="time" class="secdatetime">
+                    <div id="hourdiv"></div>
+                    <div class="divcolon">:</div>
+                    <div id="minutediv"></div>
+                    <div class="divcolon">:</div>
+                    <div id="secdiv"></div>
+                    <div id="ampmdiv"></div>
+                </div>
+                <div id="date" class="secdatetime">
+                    <div id="divtodaydate"></div>
+                    <div id="divmonth"></div>
+                    <div id="divyear"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

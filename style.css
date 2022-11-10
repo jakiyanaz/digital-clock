@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.container{
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#maincontainer{
+    /* margin: 20px;
+    padding: 20px; */
+    border: 2px solid green;
+    border-radius: 8px;
+    /* height: 60%; */
+    width: 40%;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    box-shadow: 4px 5px 8px green;
+    /* grid-gap: 10px; */
+}
+div#maincontainer:hover{
+    box-shadow: 6px 8px 10px green;
+    background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+    color: black;
+}
+.sec{
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#datetime{
+    grid-area: 1/1/2/3;
+}
+section#datetime .secdatetime{
+    /* border: 2px solid brown; */
+    margin-bottom: 0;
+}
+section#datetime #time{
+    display: flex;
+    font-size: 30px;
+    font-weight: bolder;
+    /* padding: 5px; */
+}
+section#datetime #time div{
+    /* border: 2px solid crimson; */
+    margin-left: 5px;
+}
+section#datetime #date{
+    display: flex;
+}
+section#datetime #date div{
+    margin-left: 5px;
+}
+
+@media screen and (max-width:1000px) {
+    .sec{
+        margin: 0;
+        padding: 0;
+        border: 2px solid green;
+    }
+    div#maincontainer{
+        width: 100%;
+    }
+}
